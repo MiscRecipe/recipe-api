@@ -1,0 +1,12 @@
+README.md
+pom.xml
+src/main/java/com/misc/recipeapi/api/ApiUtil.java
+src/main/java/com/misc/recipeapi/api/RecipesApi.java
+src/main/java/com/misc/recipeapi/api/TagsApi.java
+src/main/java/com/misc/recipeapi/model/CommonError.java
+src/main/java/com/misc/recipeapi/model/Recipe.java
+src/main/java/com/misc/recipeapi/model/SearchRecipeResponse.java
+src/main/java/com/misc/recipeapi/model/SearchRecipeResponseResult.java
+src/main/java/com/misc/recipeapi/model/SearchTagResponse.java
+src/main/java/com/misc/recipeapi/model/SearchTagResponseResult.java
+src/main/java/com/misc/recipeapi/model/Tag.java
