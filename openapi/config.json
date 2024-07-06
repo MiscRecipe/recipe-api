@@ -1,0 +1,16 @@
+{
+  "generatorName": "spring",
+  "inputSpec": "src/main/resources/openapi/openapi.yaml",
+  "outputDir": "src/main/java/com/misc/recipeapi",
+  "additionalProperties": {
+    "invokerPackage": "com.misc.recipeapi",
+    "apiPackage": "com.misc.recipeapi.api",
+    "modelPackage": "com.misc.recipeapi.model",
+    "useTags": true,
+    "interfaceOnly": true,
+    "dateLibrary": "java8",
+    "useBeanValidation": true,
+    "swaggerAnnotations": true,
+    "applicationFile": "yaml"
+  }
+}

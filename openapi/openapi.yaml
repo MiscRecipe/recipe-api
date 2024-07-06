@@ -1,0 +1,16 @@
+openapi: 3.0.3
+info:
+  title: Recipe API
+  version: 1.0.0
+servers:
+  - url: https://localhost:8080/v1
+tags:
+  - name: tags
+    description: "태그 관련 API"
+  - name: recipes
+    description: "레시피 관련 API"
+paths:
+  /misc/tags:
+    $ref: 'paths/search_tag.yaml'
+  /misc/recipe:
+    $ref: 'paths/search_recipe.yaml'

@@ -1,0 +1,15 @@
+type: object
+properties:
+  result:
+    type: object
+    properties:
+      recipes:
+        type: array
+        items:
+          $ref: '../schemas/recipe.yaml'
+  timestamp:
+    type: string
+    format: date-time
+required:
+  - result
+  - timestamp

@@ -1,0 +1,19 @@
+type: object
+properties:
+  id:
+    type: integer
+  name:
+    type: string
+  summary:
+    type: string
+  thumbnailImage:
+    type: string
+    format: uri
+  tags:
+    $ref: 'tag.yaml'
+required:
+  - id
+  - name
+  - summary
+  - thumbnailImage
+  - tags

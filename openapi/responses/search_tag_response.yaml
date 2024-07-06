@@ -1,0 +1,15 @@
+type: object
+properties:
+  result:
+    type: object
+    properties:
+      tags:
+        type: array
+        items:
+          $ref: '../schemas/tag.yaml'
+  timestamp:
+    type: string
+    format: date-time
+required:
+  - result
+  - timestamp

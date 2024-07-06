@@ -1,0 +1,58 @@
+get:
+  summary: SearchRecipe
+  description: |-
+    레시피 검색 API
+    
+    - 검색방법
+    
+        - 분류별 검색
+    
+    - 반환 해 주었으면 하는 정보
+    
+        - 레시피 타이틀, 대표이미지, 개요, 재료정보(id, name)
+  parameters:
+    - name: Authorization
+      in: header
+      required: true
+      schema:
+        type: string
+      example: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c
+    - name: searchWord
+      in: query
+      required: true
+      schema:
+        type: string
+      example: pasta
+    - name: tagIds
+      in: query
+      required: true
+      schema:
+        type: string
+      example: 1,2,3
+    - name: categories
+      in: query
+      required: true
+      schema:
+        type: string
+      example: MAIN,SUB,TEMP
+  responses:
+    '200':
+      description: OK
+      content:
+        application/json:
+          schema:
+            $ref: '../responses/search_recipe_response.yaml'
+          examples:
+            레시피 검색 결과:
+              $ref: '../examples/search_recipe_example.yaml'
+    default:
+      description: common error
+      content:
+        application/json:
+          schema:
+            $ref: "../schemas/common_error.yaml"
+          examples:
+            default:
+              $ref: '../examples/error_example.yaml'
+  tags:
+    - recipes

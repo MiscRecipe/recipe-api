@@ -1,0 +1,34 @@
+description: 레시피 검색 결과
+value:
+  result:
+    recipes:
+      - id: 1
+        name: "초간단 미역국"
+        summary: "집에서 쉽게 만드는 미역국"
+        tags:
+          - id: 11
+            name: "미역"
+          - id: 22
+            name: "소고기"
+          - id: 33
+            name: "참기름"
+        thumbnailImage: "https://example.com/images/recipe1.jpg"
+      - id: 2
+        name: "초간단 샐러드"
+        summary: "불 없이 쉽게 만드는 샐러드"
+        tags:
+          - id: 44
+            name: "양상추"
+          - id: 55
+            name: "올리브유"
+        thumbnailImage: "https://example.com/images/recipe2.jpg"
+      - id: 3
+        name: "초간단 치킨"
+        summary: "기름없이 쉽게 만드는 치킨"
+        tags:
+          - id: 66
+            name: "닭고기"
+          - id: 77
+            name: "후추"
+        thumbnailImage: "https://example.com/images/recipe3.jpg"
+  timestamp: "2024-01-01T00:00:00.000Z"

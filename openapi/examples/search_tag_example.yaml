@@ -1,0 +1,11 @@
+description: 태그 검색 결과
+value:
+  result:
+    tags:
+      - id: 1
+        name: "김"
+      - id: 2
+        name: "김치"
+      - id: 3
+        name: "파래김"
+  timestamp: "2024-01-01T00:00:00.000Z"
