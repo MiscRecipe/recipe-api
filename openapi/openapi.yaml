@@ -12,5 +12,5 @@ tags:
 paths:
   /misc/tags:
     $ref: 'paths/search_tag.yaml'
-  /misc/recipe:
+  /misc/recipes:
     $ref: 'paths/search_recipe.yaml'
