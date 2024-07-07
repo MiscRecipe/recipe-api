@@ -33,7 +33,7 @@ import java.util.Map;
 import java.util.Optional;
 import javax.annotation.Generated;
 
-@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2024-07-07T00:41:41.895443+09:00[Asia/Tokyo]", comments = "Generator version: 7.7.0")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2024-07-07T19:03:27.012992+09:00[Asia/Tokyo]", comments = "Generator version: 7.7.0")
 @Validated
 @Tag(name = "recipes", description = "레시피 관련 API")
 public interface RecipesApi {
@@ -43,7 +43,7 @@ public interface RecipesApi {
     }
 
     /**
-     * GET /misc/recipe : SearchRecipe
+     * GET /misc/recipes : SearchRecipe
      * 레시피 검색 API  - 검색방법      - 분류별 검색  - 반환 해 주었으면 하는 정보      - 레시피 타이틀, 대표이미지, 개요, 재료정보(id, name)
      *
      * @param authorization  (required)
@@ -54,7 +54,7 @@ public interface RecipesApi {
      *         or common error (status code 200)
      */
     @Operation(
-        operationId = "miscRecipeGet",
+        operationId = "miscRecipesGet",
         summary = "SearchRecipe",
         description = "레시피 검색 API  - 검색방법      - 분류별 검색  - 반환 해 주었으면 하는 정보      - 레시피 타이틀, 대표이미지, 개요, 재료정보(id, name)",
         tags = { "recipes" },
@@ -69,11 +69,11 @@ public interface RecipesApi {
     )
     @RequestMapping(
         method = RequestMethod.GET,
-        value = "/misc/recipe",
+        value = "/misc/recipes",
         produces = { "application/json" }
     )
     
-    default ResponseEntity<SearchRecipeResponse> miscRecipeGet(
+    default ResponseEntity<SearchRecipeResponse> miscRecipesGet(
         @NotNull @Parameter(name = "Authorization", description = "", required = true, in = ParameterIn.HEADER) @RequestHeader(value = "Authorization", required = true) String authorization,
         @NotNull @Parameter(name = "searchWord", description = "", required = true, in = ParameterIn.QUERY) @Valid @RequestParam(value = "searchWord", required = true) String searchWord,
         @NotNull @Parameter(name = "tagIds", description = "", required = true, in = ParameterIn.QUERY) @Valid @RequestParam(value = "tagIds", required = true) String tagIds,
